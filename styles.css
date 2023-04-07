@@ -24,7 +24,7 @@ body {
 
   .accordion-content {
     transition: max-height 0.2s ease-out;
-    }
+  }
   
   /* Disable ugly boxes around images in IE10 */
   a img{
@@ -180,7 +180,7 @@ body {
   
   .android-be-together-section {
     position: relative;
-    height: 800px;
+    height: 30vh;
     width: auto;
     background-color: #f3f3f3;
     background-size: cover;
@@ -195,12 +195,13 @@ body {
   
   .android-slogan {
     font-size: 60px;
-    padding-top: 160px;
+    padding-top: 20px;
   }
   
   .android-sub-slogan {
     font-size: 21px;
-    padding-top: 24px;
+    padding-top: auto;
+    padding-bottom:s auto;
   }
   
   .android-create-character {
