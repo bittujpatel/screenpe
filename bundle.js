@@ -1,16 +1,19 @@
-var accordions = document.getElementsByClassName("accordion");
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-for (var i = 0; i < accordions.length; i++) {
-  accordions[i].onclick = function() {
-    this.classList.toggle('is-open');
-
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight) {
-      // accordion is currently open, so close it
-      content.style.maxHeight = null;
-    } else {
-      // accordion is currently closed, so open it
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  }
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        var active = document.querySelector(".accordion.active");
+        if (active && active != this) {
+            active.classList.remove("active");
+            active.nextElementSibling.style.maxHeight = null;
+        }
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
 }
