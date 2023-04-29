@@ -73,13 +73,21 @@ body {
     height: 28px;
     width: 140px;
   }
-  
-  
+
   .android-header {
     overflow: visible;
     background-color: white;
   }
-  
+
+    .android-title {
+      height: 60px;
+    }
+    
+    .android-title img {
+      margin-top: 10%;
+      height: 100%;
+    }
+    
     .android-header .material-icons {
       color: #767777 !important;
     }
@@ -177,8 +185,51 @@ body {
         position: absolute;
         bottom: 16px;
       }
-  
+
   .android-be-together-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;    
+    position: relative;
+    height: 30vh;
+    width: auto;
+    background-size: cover;
+    background-image: url('images/bgimg.jpg')s;
+  }
+  
+  .logo-font {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1;
+    color: #767777;
+    font-weight: 500;
+  }
+  
+  .logo-font.android-slogan {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .logo-font.android-sub-slogan {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .android-links {
+    margin-top: 20px;
+  }
+  
+  .android-links a {
+    color: #4285f4;
+    text-decoration: none;
+  }
+  
+  .android-links a:hover {
+    text-decoration: underline;
+  }
+
+  /* .android-be-together-section {
     position: relative;
     height: 30vh;
     width: auto;
@@ -202,7 +253,7 @@ body {
     font-size: 21px;
     padding-top: auto;
     padding-bottom:s auto;
-  }
+  } */
   
   .android-create-character {
     font-size: 21px;
@@ -241,198 +292,6 @@ body {
   .android-image-link {
     text-decoration: none;
   }
-  
-  .android-wear {
-    display: inline-block;
-    width: 160px;
-    margin-right: 32px;
-  }
-  
-    .android-wear .android-screen-image {
-      width: 40%;
-      z-index: 1;
-    }
-  
-  
-  .android-phone {
-    display: inline-block;
-    width: 64px;
-    margin-right: 48px;
-  }
-  
-    .android-phone .android-screen-image {
-      width: 100%;
-      z-index: 1;
-    }
-  
-  
-  .android-tablet {
-    display: inline-block;
-    width: 110px;
-    margin-right: 64px;
-  }
-  
-    .android-tablet .android-screen-image {
-      width: 100%;
-      z-index: 1;
-    }
-  
-    .android-tablet .android-link {
-      display: block;
-      z-index: 2;
-    }
-  
-  
-  .android-tv {
-    display: inline-block;
-    width: 300px;
-    margin-right: 80px;
-  }
-  
-    .android-tv .android-screen-image {
-      width: 100%;
-      z-index: 1;
-    }
-  
-  
-  .android-auto {
-    display: inline-block;
-    width: 300px;
-    overflow: hidden;
-  }
-  
-    .android-auto .android-screen-image {
-      display: block;
-      height: 300px;
-      z-index: 1;
-    }
-  
-  
-  .android-wear-section {
-    position: relative;
-    background: url('images/wear.png') center top no-repeat;
-    background-size: cover;
-    height: 800px;
-  }
-  
-  .android-wear-band {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #37474f;
-  }
-  
-  .android-wear-band-text {
-    max-width: 800px;
-    margin-left: 25%;
-    padding: 24px;
-    text-align: left;
-    color: white;
-  }
-  
-    .android-wear-band-text p {
-      padding-top: 8px;
-    }
-  
-  .android-link {
-    text-decoration: none;
-    color: #8bc34a !important;
-  }
-  
-    .android-link:hover {
-      color: #7cb342 !important;
-    }
-  
-    .android-link .material-icons {
-      position: relative;
-      top: -1px;
-      vertical-align: middle;
-    }
-  
-  .android-alt-link {
-    text-decoration: none;
-    color: #64ffda !important;
-    font-size: 16px;
-  }
-  
-    .android-alt-link:hover {
-      color: #00bfa5 !important;
-    }
-  
-    .android-alt-link .material-icons {
-      position: relative;
-      top: 6px;
-    }
-  
-  .android-customized-section {
-    text-align: center;
-  }
-  
-  .android-customized-section-text {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 80px 16px 0 16px;
-  }
-  
-    .android-customized-section-text p {
-      padding-top: 16px;
-    }
-  
-  .android-customized-section-image {
-    background: url('images/devices.jpg') center top no-repeat;
-    background-size: cover;
-    height: 400px;
-  }
-  
-  .android-more-section {
-    padding: 80px 0;
-    max-width: 1044px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-    .android-more-section .android-section-title {
-      margin-left: 12px;
-      padding-bottom: 24px;
-    }
-  
-  
-    .android-card-container .mdl-card__media {
-      overflow: hidden;
-      background: transparent;
-    }
-  
-      .android-card-container .mdl-card__media img {
-        width: 100%;
-      }
-  
-    .android-card-container .mdl-card__title {
-      background: transparent;
-      height: auto;
-    }
-  
-    .android-card-container .mdl-card__title-text {
-      color: black;
-      height: auto;
-    }
-  
-    .android-card-container .mdl-card__supporting-text {
-      height: auto;
-      color: black;
-      padding-bottom: 56px;
-    }
-  
-    .android-card-container .mdl-card__actions {
-      position: absolute;
-      bottom: 0;
-    }
-  
-    .android-card-container .mdl-card__actions a {
-      border-top: none;
-      font-size: 16px;
-    }
   
   .android-footer {
     background-color: #fafafa;
@@ -479,7 +338,15 @@ body {
     .android-title {
       display: none !important;
     }
-  
+
+    .android-mobile-title {
+      margin-top: 2px;
+      height: 60px;
+    }
+    
+    .android-mobile-title img {
+      height: 100%;
+    }
     .android-mobile-title {
       display: block !important;
       position: absolute;
@@ -548,9 +415,9 @@ body {
   }
   
   .container {
-    width: 80%;
-    max-width: 600px;
-    margin: 50px auto;
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
   }
   
   button.accordion {
@@ -565,8 +432,19 @@ body {
     cursor: pointer;
     transition: background-color 0.2s linear;
   }
-  
+
   button.accordion:after {
+    content: 'expand_more';
+    font-family: 'Material Icons';
+    font-size: 14px;
+    float: right;
+  }
+  
+  button.accordion.is-open:after {
+    content: 'expand_less';
+  }
+
+  /* button.accordion:after {
     content: '↡';
     font-family: "fontawesome";
     font-size: 14px;
@@ -575,7 +453,7 @@ body {
   
   button.accordion.is-open:after {
     content: '↑';
-  }
+  } */
   
   button.accordion:hover, button.accordion.is-open {
     background-color: #ddd;
